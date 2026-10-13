@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.sebms.BackendIntegrationTest
+-------------------------------------------------------------------------------
+Tests run: 17, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 18.68 s -- in com.sebms.BackendIntegrationTest
