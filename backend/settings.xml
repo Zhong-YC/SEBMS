@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<settings xmlns="http://maven.apache.org/SETTINGS/1.2.0">
+ <localRepository>${user.dir}/.m2</localRepository>
+ <profiles><profile><id>local-cache</id>
+  <repositories>
+   <repository><id>cached-user</id><url>file:///C:/Users/nij/.m2/repository</url><releases><checksumPolicy>ignore</checksumPolicy></releases></repository>
+   <repository><id>cached-maven</id><url>file:///D:/JavaWeb/apache-maven-3.9.4/mvn_repo</url><releases><checksumPolicy>ignore</checksumPolicy></releases></repository>
+   <repository><id>central</id><url>https://repo.maven.apache.org/maven2</url></repository>
+  </repositories>
+  <pluginRepositories>
+   <pluginRepository><id>cached-user</id><url>file:///C:/Users/nij/.m2/repository</url><releases><checksumPolicy>ignore</checksumPolicy></releases></pluginRepository>
+   <pluginRepository><id>cached-maven</id><url>file:///D:/JavaWeb/apache-maven-3.9.4/mvn_repo</url><releases><checksumPolicy>ignore</checksumPolicy></releases></pluginRepository>
+   <pluginRepository><id>central</id><url>https://repo.maven.apache.org/maven2</url></pluginRepository>
+  </pluginRepositories>
+ </profile></profiles><activeProfiles><activeProfile>local-cache</activeProfile></activeProfiles>
+ <mirrors><mirror><id>central-https</id><mirrorOf>central</mirrorOf><url>https://repo.maven.apache.org/maven2</url></mirror></mirrors>
+</settings>
