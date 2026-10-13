@@ -1,0 +1,31 @@
+server:
+  address: 127.0.0.1
+  port: ${SERVER_PORT:8080}
+  servlet:
+    session:
+      timeout: 30m
+      cookie:
+        http-only: true
+        same-site: lax
+spring:
+  datasource:
+    url: ${DB_URL:jdbc:mysql://127.0.0.1:3307/sebms?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai&allowPublicKeyRetrieval=true&useSSL=false}
+    username: ${DB_USER:sebms}
+    password: ${DB_PASSWORD:}
+    hikari:
+      maximum-pool-size: 10
+  sql:
+    init:
+      mode: always
+      encoding: UTF-8
+  jackson:
+    deserialization:
+      fail-on-unknown-properties: true
+      accept-float-as-int: false
+    mapper:
+      allow-coercion-of-scalars: false
+mybatis:
+  configuration:
+    map-underscore-to-camel-case: true
+sebms:
+  demo-data: ${DEMO_DATA:true}
